@@ -18,7 +18,7 @@ export function Produto() {
   return (
     <div className="produto-container">
       <section className="produto-section">
-        <h2>Detalhes do Produto {product.id}</h2>
+        <h2>{product.name}</h2>
         <ProductDetails 
           imageUrl={product.image} 
           name={product.name} 

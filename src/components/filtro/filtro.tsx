@@ -22,9 +22,9 @@ const Filtro: React.FC<FiltroProps> = ({ onFiltroChange, onMarcaChange }) => {
         <option value="">Selecione um tipo de Pc</option>
         <option value="completo">PC Completo</option>
         <option value="acessorios">PC com Acessórios</option>
-      </select>
-
-      <h3>Filtrar por Marca</h3>
+      </select> <br /> <br />
+      
+      <h3>Filtrar por Marca</h3> 
       <select onChange={handleMarcaChange} className={styles.filtroSelect}>
         <option value="">Fabricante do Modelo de CPU</option>
         <option value="AMD">AMD</option>

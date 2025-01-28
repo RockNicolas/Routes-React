@@ -3,6 +3,7 @@ import { Home } from './pages/home/index'
 import { Sobre } from './pages/sobre/index'
 import { Contato } from './pages/contato/index'
 import {Produto } from './pages/produtos/index'
+import { NotFound } from './pages/notfound/index'
 
 const router = createBrowserRouter([
     {
@@ -18,8 +19,12 @@ const router = createBrowserRouter([
         element: <Contato/>
     },
     {
-        path: "/produto",
+        path: "/produto/:id",
         element: <Produto/>
+    },
+    {
+        path: "*",
+        element: <NotFound/>
     }
 ])
 

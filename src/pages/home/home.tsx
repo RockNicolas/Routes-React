@@ -40,7 +40,7 @@ export function Home() {
     <div className="home-container">
       <Filtro onFiltroChange={setFiltro} onMarcaChange={setMarcaFiltro} /> {}
 
-      <section className="product-section" style={{ marginLeft: '270px' }}>
+      <section className="product-section" style={{ marginLeft: '270px', marginTop: '-220px' }}>
         <h2>Nossos Produtos</h2>
         <div className="product-boxes">
           {filteredProducts.length > 0 ? (

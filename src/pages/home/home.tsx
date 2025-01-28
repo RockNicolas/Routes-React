@@ -1,4 +1,4 @@
-import { ProductCard } from '../../components/ProductCard';
+import { ProductCard } from '../../components/home/ProductCard';
 import './home.css';
 
 interface Product {

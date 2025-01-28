@@ -1,11 +1,14 @@
 import { Link } from 'react-router-dom'
-import './index.css'
+import { Header } from '../../components/header/header'
+import './home.css'
 
 export function Home(){
     return(
         <div>
+            <Header/>
+            
             <h1>Bem vindo a Pagina Home!</h1>
-            <span>Essa é a minah primeira pagina com navegação</span>
+            <span>Home</span>
             <br />
             <Link to="/sobre">Sobre</Link> <br />
             <Link to="/contato">Contato</Link> <br />

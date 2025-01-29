@@ -4,7 +4,9 @@ import './header.css'
 export function Header(){
     return(
         <header>
-            <h2>InformaticaRock</h2>
+            <h2>
+                <Link to="/">InformaticaRock</Link>
+            </h2>
             <div>  
                 <Link to="/">Home</Link>
                 <Link to="/sobre">Sobre</Link>

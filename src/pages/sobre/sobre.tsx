@@ -5,9 +5,10 @@ import './sobre.css';
 export function Sobre() {
   return (
     <div className="sobre">
-      <h1>Sobre a Loja</h1>
-      <Avaliacao />
+      <h2>Sobre a Loja</h2>
       <Localizacao />
+      <Avaliacao />
+
     </div>
   );
 }

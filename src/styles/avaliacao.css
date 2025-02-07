@@ -1,4 +1,3 @@
-/* src/styles/avaliacao.css */
 .avaliacao {
     background-color: #fff;
     padding: 25px;
@@ -8,60 +7,60 @@
     max-width: 500px;
     margin: 30px auto;
     text-align: center;
-  }
+}
   
-  h3 {
-    font-size: 24px;
+h3 {
+    font-size: 30px;
     color: #333;
     margin-bottom: 20px;
-  }
+}
   
-  .estrelas {
+.estrelas {
     display: flex;
     justify-content: center;
-    font-size: 30px;
+    font-size: 40px;
     color: #ccc;
     margin-bottom: 20px;
-  }
+}
   
-  .estrela {
+.estrela {
     cursor: pointer;
     transition: color 0.3s ease;
-  }
+}
   
-  .estrela.preenchida {
+.estrela.preenchida {
     color: #ffd700;
-  }
+}
   
-  textarea {
+textarea {
     width: 100%;
     height: 120px;
     padding: 10px;
     margin-top: 15px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    font-size: 16px;
+    font-size: 20px;
     resize: none;
     box-sizing: border-box;
-  }
+}
   
-  button {
+button {
     margin-top: 20px;
     padding: 12px 25px;
     background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 22px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
+}
   
-  button:hover {
+button:hover {
     background-color: #0056b3;
-  }
+}
   
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .avaliacao {
       width: 90%;
     }
@@ -73,5 +72,5 @@
     .estrelas {
       font-size: 24px;
     }
-  }
+}
   

@@ -1,0 +1,39 @@
+h1 {
+    color: #333;
+  }
+  
+  h2 {
+    margin-top: 20px;
+    color: #555;
+  }
+  
+  a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #0066cc;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .avaliacao {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  .avaliacao h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .avaliacao p {
+    color: #666;
+  }
+  
+  iframe {
+    border-radius: 8px;
+  }
+  

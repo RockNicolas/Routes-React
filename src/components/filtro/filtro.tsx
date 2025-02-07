@@ -15,6 +15,10 @@ const Filtro: React.FC<FiltroProps> = ({ onFiltroChange, onMarcaChange }) => {
     onMarcaChange(event.target.value);
   };
 
+  const handleMonitorChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    onMarcaChange(event.target.value);
+  };
+
   return (
     <div className={styles.filtro}>
       <h3>Filtrar por Tipo</h3>
@@ -22,14 +26,21 @@ const Filtro: React.FC<FiltroProps> = ({ onFiltroChange, onMarcaChange }) => {
         <option value="">Selecione um tipo de Pc</option>
         <option value="completo">PC Completo</option>
         <option value="acessorios">PC com Acessórios</option>
-      </select> <br /> <br />
-      
-      <h3>Filtrar por Marca</h3> 
+      </select> 
+      <br/> <br/>
       <select onChange={handleMarcaChange} className={styles.filtroSelect}>
-        <option value="">Fabricante do Modelo de CPU</option>
+        <option value="">AMD / INTEL</option>
         <option value="AMD">AMD</option>
         <option value="INTEL">INTEL</option>
       </select>
+      <br/> <br/>
+      <select onChange={handleMonitorChange} className={styles.filtroSelect}>
+        <option value="">Monitor</option>
+        <option value="AMD">AMD</option>
+        <option value="INTEL">INTEL</option>
+      </select>
+
+  
     </div>
   );
 };

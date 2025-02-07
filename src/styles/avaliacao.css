@@ -1,0 +1,77 @@
+/* src/styles/avaliacao.css */
+.avaliacao {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 30px auto;
+    text-align: center;
+  }
+  
+  h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .estrelas {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: #ccc;
+    margin-bottom: 20px;
+  }
+  
+  .estrela {
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .estrela.preenchida {
+    color: #ffd700;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    resize: none;
+    box-sizing: border-box;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .avaliacao {
+      width: 90%;
+    }
+  
+    h3 {
+      font-size: 20px;
+    }
+  
+    .estrelas {
+      font-size: 24px;
+    }
+  }
+  

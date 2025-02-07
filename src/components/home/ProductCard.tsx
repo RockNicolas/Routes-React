@@ -12,7 +12,7 @@ export function ProductCard({ id, name, description, image }: ProductCardProps) 
     <div className="product-box">
       <img src={image} alt={name} />
       <h3>{name}</h3>
-      <p>{description}</p>
+      <p className="product-card-description">{description}</p> {}
       <Link to={`/produto/${id}`}>Ver detalhes</Link>
     </div>
   );

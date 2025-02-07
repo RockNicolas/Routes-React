@@ -4,6 +4,7 @@ import styles from './Filtro.module.css';
 interface FiltroProps {
   onFiltroChange: (tipo: string) => void;  
   onMarcaChange: (marca: string) => void; 
+  onMonitorChange: React.Dispatch<React.SetStateAction<string>>;
 }
 
 const Filtro: React.FC<FiltroProps> = ({ onFiltroChange, onMarcaChange }) => {
@@ -16,7 +17,7 @@ const Filtro: React.FC<FiltroProps> = ({ onFiltroChange, onMarcaChange }) => {
   };
 
   const handleMonitorChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    onMarcaChange(event.target.value);
+    onFiltroChange(event.target.value); 
   };
 
   return (
@@ -36,8 +37,13 @@ const Filtro: React.FC<FiltroProps> = ({ onFiltroChange, onMarcaChange }) => {
       <br/> <br/>
       <select onChange={handleMonitorChange} className={styles.filtroSelect}>
         <option value="">Monitor</option>
-        <option value="AMD">AMD</option>
-        <option value="INTEL">INTEL</option>
+        <option value="17">17"</option>
+        <option value="18">18"</option>
+        <option value="19.5">19.5"</option>
+        <option value="21.5">21.5"</option>
+        <option value="23.8">23.8"</option>
+        <option value="27">27"</option>
+        <option value="32">32"</option>
       </select>
     </div>
   );

@@ -9,8 +9,8 @@ interface Product {
   name: string;
   description: string;
   image: string;
-  type: 'completo' | 'acessorios' | null; 
-  marca: 'AMD' | 'INTEL' | null;
+  type: 'completo' | 'acessorios' | string; 
+  marca: 'AMD' | 'INTEL' | string;
   monitor: '17' | '18' | '19.5' | '21.5' | '23.8' | '27' | '32' ;
 }
 
@@ -41,23 +41,22 @@ export function Home() {
     { id: 19, name: 'Monitor Gamer LG, 23,8”', description: 'Monitor Gamer LG, 23,8” Polegadas, Painel IPS, Full HD, 144Hz 1ms, com conexão HDMI e DP, Freesync, 24GN60R', image: '/asset/monitores/24 2.jpg', monitor: '23.8', type: 'acessorios', marca: 'AMD' },
     { id: 20, name: 'Monitor GAMEMAX 32"', description: 'Monitor GAMEMAX 32" Preto Curvo 144Hz 1440P 1ms" Preto Curvo 144Hz 1440P 1ms', image: '/asset/monitores/32.jpg', monitor: '32', type: 'completo', marca: 'INTEL' },
     { id: 21, name: 'Monitor Concórdia Gamer Curvo C32f 32"', description: 'Monitor Concórdia Gamer Curvo C32f 32" 165hz 1ms Led Full Hd - Outlet', image: '/asset/monitores/32 2.jpg', monitor: '32', type: 'completo', marca: 'INTEL' },
-];
+  ];
 
     const filteredProducts = products.filter((product) => {
-    const matchesType = filtro ? product.type === filtro : true;
-    const matchesMarca = marcaFiltro ? product.marca === marcaFiltro : true;
     const matchesMonitor = monitorFiltro ? product.monitor === monitorFiltro : true;
+    const matchesType = filtro && !monitorFiltro ? product.type === filtro : true;
+    const matchesMarca = marcaFiltro ? product.marca === marcaFiltro : true;
     return matchesType && matchesMarca && matchesMonitor;
-});
+  });
 
   return (
     <div className="home-container">
-      <Filtro onFiltroChange={setFiltro}
-       onMarcaChange={setMarcaFiltro}
-       onMonitorChange={setMonitorFiltro}
-       />
-       
- {}
+      <Filtro 
+        onFiltroChange={setFiltro}
+        onMarcaChange={setMarcaFiltro}
+        onMonitorChange={setMonitorFiltro}
+      />
 
       <section className="product-section" style={{ marginLeft: '270px', marginTop: '-220px' }}>
         <h2>Nossos Produtos</h2>

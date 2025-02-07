@@ -30,7 +30,7 @@ const Filtro: React.FC<FiltroProps> = ({ onFiltroChange, onMarcaChange }) => {
       </select> 
       <br/> <br/>
       <select onChange={handleMarcaChange} className={styles.filtroSelect}>
-        <option value="">AMD  /  INTEL</option>
+        <option value="">Processadores</option>
         <option value="AMD">AMD</option>
         <option value="INTEL">INTEL</option>
       </select>
